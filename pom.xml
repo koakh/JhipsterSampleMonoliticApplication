@@ -23,7 +23,7 @@
         <commons-lang.version>3.5</commons-lang.version>
         <dockerfile-maven-plugin.version>1.3.4</dockerfile-maven-plugin.version>
         <!-- Overridden to get metrics-jcache -->
-        <dropwizard-metrics.version>3.2.2</dropwizard-metrics.version>
+        <dropwizard-metrics.version>4.0.0</dropwizard-metrics.version>
         <frontend-maven-plugin.version>1.6</frontend-maven-plugin.version>
         <hibernate.version>5.2.10.Final</hibernate.version>
         <hikaricp.version>2.6.0</hikaricp.version>
@@ -48,8 +48,8 @@
         <node.version>v6.11.3</node.version>
         <problem-spring-web.version>0.20.0</problem-spring-web.version>
         <!-- These remain empty unless the corresponding profile is active -->
-        <profile.no-liquibase />
-        <profile.swagger />
+        <profile.no-liquibase/>
+        <profile.swagger/>
         <prometheus-simpleclient.version>0.0.20</prometheus-simpleclient.version>
         <!-- Sonar properties -->
         <project.testresult.directory>${project.build.directory}/test-results</project.testresult.directory>
@@ -577,7 +577,7 @@
                     <url>jdbc:mysql://localhost:3306/JhipsterSampleMonoliticApplication</url>
                     <defaultSchemaName>JhipsterSampleMonoliticApplication</defaultSchemaName>
                     <username>root</username>
-                    <password></password>
+                    <password/>
                     <referenceUrl>hibernate:spring:io.github.jhipster.application.domain?dialect=org.hibernate.dialect.MySQL5InnoDBDialect&amp;hibernate.physical_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                     <verbose>true</verbose>
                     <logging>debug</logging>
